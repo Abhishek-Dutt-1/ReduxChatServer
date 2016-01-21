@@ -15,3 +15,7 @@
 ```
 > sails lift
 ```
+
+### See also:
+> Chat App Client: [ReduxChatClient](https://github.com/AbhishekDutt/ReduxChatClient)
+> Video: [Youtube](https://youtu.be/PTw4XcOwHRQ)
