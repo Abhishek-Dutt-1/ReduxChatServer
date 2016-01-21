@@ -15,17 +15,5 @@ module.exports = {
     }
   }
 
-/*
-  afterCreate: function(newComment, cb) {
-    console.log("NEW INSERTED COMMENT");
-    console.log(newComment);
-    console.log("Now Populated");
-    Comment.findOne(newComment.id).populate('commentedBy').exec(function(err, comment){
-      console.log(comment);
-      cb(comment);
-    });
-  }
-*/
-
 };
 

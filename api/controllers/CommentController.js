@@ -9,15 +9,12 @@ module.exports = {
   // Create User
   create: function(req, res) {
 
-    console.log("INSIDE CREATE")
     var comment = req.allParams()
-    console.log(comment)
     delete comment.id
 
     if(comment.author) {
 
       var author = comment.author
-      console.log(author)
 
       delete comment.author
 
@@ -40,7 +37,6 @@ module.exports = {
       })
     } else {
       // Normal RESTfull routes
-      console.log("YOLO")
       Comment.create(comment, function(err, newComment) {
         Comment.findOne(newComment.id).populate("commentedBy").exec(function(err, commentPopulated) {
           Comment.publishCreate(commentPopulated)
